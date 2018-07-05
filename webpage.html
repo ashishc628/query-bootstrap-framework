@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+    
+    
+  <head>
+      
+      <title>CS101</title>
+      
+            <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+      
+    
+      <meta charset='utf-8'>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+      
+      <style>
+      
+   .stars{
+              
+              text-align: center;
+              margin: auto;
+              
+          }    
+          
+          
+ div.stars {
+
+  width: 270px;
+
+  display: inline-block;
+
+}
+
+ 
+
+input.star { display: none; }
+
+ 
+
+label.star {
+
+  float: right;
+
+  padding: 10px;
+  font-size: 36px;
+
+  color: #444;
+
+  transition: all .2s;
+
+}
+
+ 
+
+input.star:checked ~ label.star:before {
+
+  content: '\f005';
+
+  color: #FD4;
+
+  transition: all .25s;
+
+}
+
+ 
+
+input.star-5:checked ~ label.star:before {
+
+  color: #FE7;
+
+  text-shadow: 0 0 20px #952;
+
+}
+
+ 
+
+input.star-1:checked ~ label.star:before { color: #F62; }
+
+ 
+
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+
+ 
+
+label.star:before {
+
+  content: '\f006';
+
+  font-family: FontAwesome;
+
+}
+
+ 
+          
+          
+          .jumbotron{
+              
+              
+              background-image: url(daniel-apodaca-724303-unsplash.jpg);
+             
+              
+               
+          }
+          
+          #appsummary{
+              
+              text-align: center;
+              margin-top: 50px;
+              margin-bottom: 50px;
+          }
+          
+
+          #appstoreicon{
+              
+     
+              
+              width: 150px;
+               margin: 10px 1000px 10px 85px;
+              
+              
+          }
+          
+          
+          #footer{
+              
+               
+              
+              background-color: aqua;
+              padding-top: 40px;
+              margin-top: 25px;
+              text-align: left;
+              padding-bottom: 40px;
+          }
+          
+          
+          #fol{
+              
+              
+               
+           margin: 5px 50px;
+              
+              
+          }
+          
+           
+          
+          
+          body{
+              
+              
+              position: relative;
+              
+               width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+          }
+html, body { overflow-x: hidden; }
+    
+          
+           #navbar  {
+    background-color: #ff5500;
+          }
+      
+      </style>
+      
+      
+      
+      
+    
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="150"  >
+      
+       
+          
+          
+          
+           <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top " style="background-color: dimgrey"  id="navbar" >
+      <a class="navbar-brand" href="#Home">CS101</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#jumbotron">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://roadforengineering.blogspot.com/2018/01/road-for-engineering.html">Blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="http://cs101bbcclonehosting-com.stackstaging.com">BBC Clone(website)</a>
+              <a class="dropdown-item" href="reaction.html">Reaction tester(Game)</a>
+              
+                <a class="dropdown-item" href="howmanyfinger.html">How Many Fingers(Game)</a>
+                <a class="dropdown-item" href="game.html">Snake(Game)</a>
+              
+              
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="compile.html">Compiler</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="https://www.instagram.com/followers101marketing/">Promotions</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="email" placeholder="Email" aria-label="Search">
+            <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Search">
+          <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
+        </form>
+      </div>
+    </nav>
+
+
+          <div class="jumbotron" id="jumbotron" >
+      <h1 class="display-4">My Awesome Website!</h1>
+      <p class="lead">This is a simple website will include some interesting things on which i am working On.</p>
+      <hr class="my-4">
+      <p>Want to know more? Join our mailing list!</p>
+
+
+       <form class="form-inline">
+      <div class="form-group mb-2">
+        <label for="email" class="sr-only">Email address </label>
+
+      </div>
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="email" class="sr-only">Email address</label>
+        <input type="text" class="form-control" id="email" placeholder="Email">
+      </div>
+
+      <button type="submit" class="btn btn-primary mb-2">Sign up</button>
+    </form>
+
+
+
+
+    </div>
+      
+      
+      <div class="container" >
+          
+          
+          <div class="row">
+          
+          <h1>Why this website is Awesome?</h1>
+              
+              <p class="lead" id="appsummary" >Summary is that work is under Construction! </p>
+          
+          
+          </div>
+      
+      
+      </div>
+      
+      <div class="container" id="about" >   
+      <div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="domenico-loia-272251-unsplash.jpg" alt="Card image cap">
+    <div class="card-body">
+        
+      <h5 class="card-title"><i class="fa fa-desktop" aria-hidden="true"></i>    Projects</h5>
+      <p class="card-text">You will find somw projects like Compiler,bbc clone website And Games like snake 3d, how many fingers etc.</p>
+      <p class="card-text"><small class="text-muted">Last updated 45 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="john-schnobrich-520023-unsplash.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><i class="fa fa-heart-o" aria-hidden="true"></i> Promotion</h5>
+      <p class="card-text">This section includes promotion within the web like followers,likes and views on social media , Website traffic etc.</p>
+      <p class="card-text"><small class="text-muted">Last updated 45 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="luca.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><i class="fa fa-bar-chart" aria-hidden="true"></i> Blog</h5>
+      <p class="card-text">This section includes Some informative and very useful posts based on Tech and Programming.</p>
+      <p class="card-text"><small class="text-muted">Last updated 45 mins ago</small></p>
+    </div>
+  </div>
+</div>
+          
+          
+</div>
+      
+      
+      <div  id="footer" >
+      
+      <div class="row" >
+          
+          <h2 id="fol"> Follow me on instagram!    </h2>
+         
+           <hr>
+           <div class="stars">
+
+  <form action="">
+
+    <input class="star star-5" id="star-5" type="radio" name="star"/>
+
+    <label class="star star-5" for="star-5"></label>
+
+    <input class="star star-4" id="star-4" type="radio" name="star"/>
+
+    <label class="star star-4" for="star-4"></label>
+
+    <input class="star star-3" id="star-3" type="radio" name="star"/>
+
+    <label class="star star-3" for="star-3"></label>
+
+    <input class="star star-2" id="star-2" type="radio" name="star"/>
+
+    <label class="star star-2" for="star-2"></label>
+
+    <input class="star star-1" id="star-1" type="radio" name="star"/>
+
+    <label class="star star-1" for="star-1"></label>
+
+  </form>
+
+</div>
+           
+          
+           
+          <hr>
+          
+          
+          
+          <p><a href="https://www.instagram.com/1ashish007/"><img id="appstoreicon" src="instagram-new-logo-icon-2017-2016-color-vector%20copy.png"> </a></p>
+          
+          </div>
+      
+      
+      </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+      </body>
+    </html>
+
+
+
+
+
+
+
+
+
